@@ -91,9 +91,21 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nconsole.log(\"Hello world\");\nconsole.log(\"Hole world\");\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/style.css":
+/*!***********************!*\
+  !*** ./src/style.css ***!
+  \***********************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hello world\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style.css?");
 
 /***/ })
 
