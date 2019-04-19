@@ -1,0 +1,26 @@
+{
+  "name": "jobLead_test_task",
+  "version": "1.0.0",
+  "description": "Test task for jobLeads about front end",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archual/jobLead_test_task.git"
+  },
+  "keywords": [],
+  "author": "Archual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archual/jobLead_test_task/issues"
+  },
+  "homepage": "https://github.com/archual/jobLead_test_task#readme",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
