@@ -1,11 +1,101 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>Test task from Job Leads</title>
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
   </head>
   <body>
-    <div>Hello, world!</div>
+    <div class="container general">
+      <header class="general__header">
+        <a href="#" class="logo" title="Homepage">
+          <img src=<%=require("./images/logo_JL.svg")%> alt="Job leads" />
+        </a>
+      </header>
+      <main>
+        <div class="product-card">
+          <div class="product__image">
+            <img src=<%=require("./images/mood-mobile.jpg")%> alt="Jetzt säubern
+            und neuen Job finden" />
+          </div>
+          <div class="product-card__description">
+            Sehr geehrter Herr Musterman, starten Sie sauber ins Jahr 2015mit
+            neuen Perspektiven.
+          </div>
+          <div class="product-card__pros">
+            <ul>
+              <li>
+                <i class="fa fa-check"></i> Unbegrentze Ansicht aller
+                Premium-Jobs
+              </li>
+              <li>
+                <i class="fa fa-check"></i> Gezielte Filtermöglichkeiten nach
+                Jobs mit mehr Gehalt
+              </li>
+            </ul>
+          </div>
+          <div class="price">
+            <div class="price__ico">
+              <img src=<%=require("./images/arrowCircle.svg")%>
+              class="ico__image" alt="" role="presentation" />
+            </div>
+            <div class="price__info">
+              <div class="price__info-main">EUR 79,40</div>
+              <div class="price__info-additional">
+                EUR 13,23 pro Monat
+              </div>
+            </div>
+          </div>
+          <div class="button product__more">
+            <button
+              id="more-product-info"
+              class="pure-button pure-button-warning"
+            >
+              Jetzt säubern und neuen Job finden
+            </button>
+          </div>
+          <div class="product__more-info"></div>
+        </div>
+      </main>
+    </div>
+    <footer class="container footer">
+      <p>©2014 Jobleads GmbH - Alle Rechte vorbehalten</p>
+    </footer>
+
+    <div id="modal" class="modal modal-hidden">
+      <button id="modal-close" class="modal__close">
+        <i class="fa fa-times"></i>
+        <span>Close modal</span>
+      </button>
+      <div class="modal__header">
+        <h2>Mehr Informationen</h2>
+      </div>
+      <div class="modal__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio
+        arcu, malesuada ac ipsum vel, vestibulum pretium turpis. Donec ac est a
+        ipsum fermentum iaculis et eget felis. Aenean a nisi felis. Nullam vitae
+        consequat ipsum, eget ornare justo. Curabitur cursus libero sed lectus
+        rutrum, quis auctor tortor pellentesque. Donec mauris nibh, dignissim
+        vitae pulvinar vel, pretium vitae metus. Cras id erat augue.
+        Pellentesque sapien risus, auctor et rutrum quis, condimentum ut dolor.
+        Pellentesque nec mi vel ipsum interdum dignissim vel sed lacus. Vivamus
+        hendrerit turpis ac sem porttitor facilisis. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nulla efficitur bibendum tristique.
+        Pellentesque posuere efficitur nibh, sed gravida magna.
+      </div>
+    </div>
+
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

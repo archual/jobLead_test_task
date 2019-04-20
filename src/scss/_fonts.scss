@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "FiraSans-Bold";
+  src: url("../fonts/firaSans-webf/FiraSans-Bold.eot");
+  src: url("../fonts/firaSans-webf/FiraSans-Bold.woff") format("woff"),
+    url("../fonts/firaSans-webf/FiraSans-Bold.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: url("../fonts/firaSans-webf/FiraSans-Regular.eot");
+  src: url("../fonts/firaSans-webf/FiraSans-Regular.woff") format("woff"),
+    url("../fonts/firaSans-webf/FiraSans-Regular.ttf") format("truetype");
+  font-display: fallback;
+}

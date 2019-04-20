@@ -1,0 +1,30 @@
+.container {
+  max-width: 1104px;
+  margin: 0 auto;
+
+  &.general {
+    background: url("../images/mood.jpg") center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 2em - 1.4em);
+
+    padding: 30px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      background: $background;
+      background-image: none;
+      height: initial;
+      padding: 0;
+    }
+  }
+
+  .general__header {
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 768px) {
+      background: $logo-background;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+}

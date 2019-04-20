@@ -1,0 +1,19 @@
+.pure-button {
+  color: $button-text;
+  font-size: 1.375em;
+  padding: 20px;
+  width: 100%;
+
+  &:hover {
+    font-size: 1.4375em;
+    transition: 0.2s font-size ease;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.125em;
+
+    &:hover {
+      font-size: 1.25em;
+    }
+  }
+}
